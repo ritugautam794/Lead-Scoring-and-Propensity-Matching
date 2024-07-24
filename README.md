@@ -51,14 +51,15 @@ For feature importance, we highlight the top 10 and bottom 10 features based on 
 ![image](https://github.com/user-attachments/assets/787fe02b-1b70-4daa-93a4-2f7baab47f7e)
 
 ## Propensity Score Matching 
-Propensity score matching is used to compare conversion rates between two lead sources: 'Google' and 'Direct Traffic'.
+
+Propensity score matching is used to compare conversion rates between two lead sources: 'Google' and 'Direct Traffic'.The propensity score is the predicted probability that a given lead comes from the 'Google' source rather than 'Direct Traffic'. These scores help match leads from both sources with similar characteristics.
+
 - Objective: The goal is to determine the effect of the lead source (either 'Google' or 'Direct Traffic') on conversion rates while controlling for other variables.
 - Data Preparation: The dataset is prepared by encoding lead sources into binary form: 'Google' as 1 and 'Direct Traffic' as 0. This binary encoding is necessary for logistic regression, which is used to calculate propensity scores.
 - Logistic Regression: A logistic regression model is fit using the lead source as the dependent variable and other features as independent variables.
-- 
-The propensity score is the predicted probability that a given lead comes from the 'Google' source rather than 'Direct Traffic'. These scores help match leads from both sources with similar characteristics.
+  
 
-Matching Process:Using the PsmPy library, nearest neighbor matching is performed. Each lead from the 'Google' group is matched to a lead from the 'Direct Traffic' group with a similar propensity score within a specified caliper (0.2 in this case). This ensures that the matched leads are comparable.
+Matching Process: Using the PsmPy library, nearest neighbor matching is performed. Each lead from the 'Google' group is matched to a lead from the 'Direct Traffic' group with a similar propensity score within a specified caliper (0.2 in this case). This ensures that the matched leads are comparable.
 Balance Assessment:After matching, the dataset should be balanced regarding covariates between the two groups, reducing the confounding effects.
 Visualization by Plots:The plots are generated to assess and visualize the quality of the propensity score matching process and its impact on conversion rates.
 
@@ -70,6 +71,21 @@ Purpose of Propensity Score Matching
 ![image](https://github.com/user-attachments/assets/6d0cda07-664b-4323-bf7b-fd16f1997af1)
 ![image](https://github.com/user-attachments/assets/87ad88be-5b83-4307-8d52-3a160076987c)
 ![image](https://github.com/user-attachments/assets/99cf5f63-ccc2-40a9-b755-7d67e24e1e4a)
+
+##Summary
+This strategy focuses on enhancing lead generation and sales effectiveness by measuring and optimizing return on investment (ROI) across marketing channels. By using logistic regression, the project identifies key drivers of lead conversion and quantifies the incremental revenue impact of different channels. This enables informed decision-making and a strategic approach to improving conversion rates.
+
+Through the application of association rule models, the strategy uncovers feature combinations that significantly boost conversion chances, guiding an optimized budget allocation to maximize ROI and profitability. Additionally, by replacing ineffective lead scoring systems with predictive analytics, the strategy prioritizes high-potential leads for sales teams, ensuring resource allocation is both efficient and effective. This approach ultimately aims to attract higher-quality leads and enhance overall sales productivity.
+
+
+
+
+
+
+
+
+
+
 
 
 
