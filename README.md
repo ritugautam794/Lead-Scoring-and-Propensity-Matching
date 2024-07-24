@@ -72,7 +72,7 @@ Purpose of Propensity Score Matching
 ![image](https://github.com/user-attachments/assets/87ad88be-5b83-4307-8d52-3a160076987c)
 ![image](https://github.com/user-attachments/assets/99cf5f63-ccc2-40a9-b755-7d67e24e1e4a)
 
-##Summary
+## Summary
 This strategy focuses on enhancing lead generation and sales effectiveness by measuring and optimizing return on investment (ROI) across marketing channels. By using logistic regression, the project identifies key drivers of lead conversion and quantifies the incremental revenue impact of different channels. This enables informed decision-making and a strategic approach to improving conversion rates.
 
 Through the application of association rule models, the strategy uncovers feature combinations that significantly boost conversion chances, guiding an optimized budget allocation to maximize ROI and profitability. Additionally, by replacing ineffective lead scoring systems with predictive analytics, the strategy prioritizes high-potential leads for sales teams, ensuring resource allocation is both efficient and effective. This approach ultimately aims to attract higher-quality leads and enhance overall sales productivity.
