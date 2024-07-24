@@ -29,6 +29,11 @@ The CEO has specified a target lead conversion rate of approximately 80%
 
 ## Exploratory Data Analysis
 
+- In the exploratory data analysis (EDA) phase, our primary objective is to understand the growth potential of our customers. We analyze various aspects such as the countries from which leads are generated, the percentage of leads converting from different industries, and the distribution of leads across various sources. Additionally, we examine which channels yield higher conversion rates for different types of leads. This comprehensive analysis helps in identifying trends and patterns that could inform strategies to optimize lead generation and conversion.
+- Next, we evaluate how leads spend time across various channels and analyze the conversion rates associated with this engagement. We also investigate conversion patterns based on occupation and compare asymmetrical profile scoring to understand its impact on conversion likelihood. This analysis helps in identifying key factors that influence lead conversion and refining strategies to improve overall efficiency.
+- For each channel, we create a matrix that includes metrics such as total leads, leads converted, profit, ROI, revenue, and marketing spend. This detailed matrix allows us to assess the performance of each channel comprehensively and make data-driven decisions to optimize lead generation and conversion strategies.
+
+
 ![image](https://github.com/user-attachments/assets/1185c745-a6f3-4c7d-8e13-b0ac6e7d6531)
 
 ![image](https://github.com/user-attachments/assets/2a41f758-328e-4b7c-ad04-60a92f3364bd)
@@ -36,12 +41,17 @@ The CEO has specified a target lead conversion rate of approximately 80%
 ![image](https://github.com/user-attachments/assets/827a3e62-ffea-4c14-a9ae-a045501fb80a)
 
 ## Model Building Process
-![image](https://github.com/user-attachments/assets/ed3d0743-6b89-442c-8202-5a3198eab6aa)
-feature importance
 
+The model-building process for logistic regression involves preparing the data through feature selection and cleaning, splitting it into training and testing sets, and then fitting the model to the training data to estimate feature coefficients. The model is evaluated on the testing set using metrics such as accuracy and ROC-AUC score. Logistic regression is chosen for its interpretability, as it provides clear insights into the relationship between features and the target variable through its coefficients, making it easier to understand the influence of each feature on the outcome. This simplicity and clarity make it a preferred choice when understanding model predictions is essential.
+
+![image](https://github.com/user-attachments/assets/ed3d0743-6b89-442c-8202-5a3198eab6aa)
+
+## Feature Importance
+For feature importance, we highlight the top 10 and bottom 10 features based on their impact on the model’s predictions. The top 10 features are those with the most significant positive or negative coefficients, indicating their strong influence on the target variable. Conversely, the bottom 10 features have minimal impact, either because they have small coefficients or their effects are less pronounced. By showcasing these extremes, we provide a clear view of which features are most and least influential, helping to focus on key drivers and refine the model for better performance.
 ![image](https://github.com/user-attachments/assets/787fe02b-1b70-4daa-93a4-2f7baab47f7e)
 
 PROPENSITY MODELLING
+
 ![image](https://github.com/user-attachments/assets/6d0cda07-664b-4323-bf7b-fd16f1997af1)
 ![image](https://github.com/user-attachments/assets/87ad88be-5b83-4307-8d52-3a160076987c)
 ![image](https://github.com/user-attachments/assets/99cf5f63-ccc2-40a9-b755-7d67e24e1e4a)
